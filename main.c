@@ -237,7 +237,7 @@ struct Node * SearchByName(char name[])
     if(pHead)
     {
         ptr = pHead;
-        while(ptr->std.name != name && ptr)
+        while(strcmp(ptr->std.name, name) != 0 && ptr)
         {
             ptr = ptr->pNext;
         }
